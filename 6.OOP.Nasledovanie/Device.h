@@ -7,7 +7,7 @@ class Device : public iElectronics
 	int _baterylife;
 
 public:
-	Device(string* name, float price, int _batterylife);
+	Device(string& name, float price, int _baterylife);
 	void Showinfo();
 
 

@@ -1,13 +1,13 @@
 #include <iostream>
 #include "Laptop.h"
 
-Laptop::Laptop(std::string* name, float price, int _batterylife, int _powerusage) : Applienc(std::string* name, float price, int _powerusage), Device(int _batterylife)
+
+Laptop::Laptop(string& name, float price, int _baterylife, int _powerUsage) : Applienc(name, price, _powerUsage), Device(_baterylife)
 {
 
 }
 
 void Laptop::Showinfo()
 {
-	cout << Device.Showinfo << endl;
-	cout << "Power usage: " << _powerusage << endl << endl;
+	cout << "Power usage: " << _powerUsage << endl << endl;
 }

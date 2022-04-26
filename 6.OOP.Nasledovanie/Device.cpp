@@ -3,13 +3,13 @@
 
 using namespace std;
 
-Device::Device(string* name, float price, int _batterylife) : iElectronics(string* name, float price)
+Device::Device(string& name, float price, int _baterylife) : iElectronics(name, price)
 {
-	this->_batterylife = batterylife;
+	this->_baterylife = _baterylife;
 }
 
 void Device::Showinfo()
 {
-	void iElectronics.Showinfo();
-	cout << "Battery life: " << _batterylife << endl;
+	
+	cout << "Battery life: " << _baterylife << endl;
 }

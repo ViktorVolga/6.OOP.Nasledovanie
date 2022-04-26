@@ -139,14 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Aplience.cpp" />
     <ClCompile Include="Device.cpp" />
     <ClCompile Include="iElectronics.cpp" />
+    <ClCompile Include="Laptop.cpp" />
     <ClCompile Include="Maine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Appliances.h" />
     <ClInclude Include="Device.h" />
     <ClInclude Include="IElectronics.h" />
+    <ClInclude Include="Laptop.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

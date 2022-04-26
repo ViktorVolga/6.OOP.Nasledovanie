@@ -1,14 +1,17 @@
 #pragma once
 
 #include <iostream>
+#include<string>
+
+using namespace std;
 
 class iElectronics 
 {
 	float price;
-	std::string* name;
+	string name;
 
 public:
-	iElectronics(std::string* name, float price) //конструктор с параметрами 
+	iElectronics(string& name, float price); //конструктор с параметрами 
 	virtual ~iElectronics() = default; //деструктор по умолчанию - для наследников
 	virtual void Showinfo(); // функция вывода информации об устройстве.
 };

@@ -1,13 +1,14 @@
 #include <iostream>
 #include "Appliances.h"
 
-Applienc::Applienc(std::string* name, float price, int _powerusage) : iElectronics(std::string* name, float price)
+
+Applienc::Applienc(string& name, float price, int _powerUsage) : iElectronics(name, price)
 {
-	this->_powerusage = _powerusage;
+	this->_powerUsage = _powerUsage;
 }
 
 void Applienc::Showinfo()
 {
-	void iElectronics.Showinfo();
-	cout << "Power usage: " << _powerusage << endl;
+	
+	std::cout << "Power usage: " << _powerUsage << std::endl;
 }
