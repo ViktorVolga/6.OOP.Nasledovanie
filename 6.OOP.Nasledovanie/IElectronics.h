@@ -4,8 +4,11 @@
 
 class iElectronics 
 {
+	float price;
+	std::string* name;
+
 public:
-	virtual void Showspec() = 0;
-	virtual ~iElectronics() = default;
-	
+	iElectronics(std::string* name, float price) //конструктор с параметрами 
+	virtual ~iElectronics() = default; //деструктор по умолчанию - для наследников
+	virtual void Showinfo(); // функция вывода информации об устройстве.
 };

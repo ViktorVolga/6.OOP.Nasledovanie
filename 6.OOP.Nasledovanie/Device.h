@@ -4,10 +4,11 @@ using namespace std;
 
 class Device : public iElectronics
 {
-	int _batterylife;
+	int _baterylife;
+
 public:
-	Device(int _batterylife);
-	void Showspec();
+	Device(string* name, float price, int _batterylife);
+	void Showinfo();
 
 
 };

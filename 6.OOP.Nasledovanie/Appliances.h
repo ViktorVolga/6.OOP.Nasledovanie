@@ -1,9 +1,10 @@
 #pragma once
 #include "iElectronics.h"
 
-class Applienc : iElectronics
+class Applienc : public iElectronics
 {
-	int weight;
+	int _powerUsage;
 public:
-	void ShowSpec() { std::cout << "I am Applienc" << std::endl; };
+	Applienc(std::string* name, float price, int _powerusage);
+	void Showinfo();
 };
